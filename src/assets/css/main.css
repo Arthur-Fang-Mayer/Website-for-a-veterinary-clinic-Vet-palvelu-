@@ -1,0 +1,102 @@
+@import url("./cleaner.css");
+
+@font-face {
+    font-family: "Open Sans", sans-serif;
+    src: url("../fonts/OpenSans-Regular.woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Open Sans", sans-serif;
+    src: url("../fonts/OpenSans-SemiBold.woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Lora", serif;
+    src: url("../fonts/Lora-Regular.woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Lora", serif;
+    src: url("../fonts/Lora-SemiBold.woff2");
+    font-weight: 600;
+}
+
+:root {
+    --text-color: #2f2b24;
+    --btn-color: #afcdc9;
+    --decorations-color: #afcdc9;
+    --highlights-color: #5E9F97;
+    --subtitles-color: #C9C2BE;
+    --bg-color: #f9f8f6;
+    --borders-color: #CED0D4;
+    --light-text-color: #CED0D4;
+}
+
+* {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+nav {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: "Lora", serif;
+    color: var(--light-text-color);
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.subtitle {
+    font-family: "Lora", serif;
+    color: var(--light-text-color);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: "Lora", serif;
+    color: var(--decorations-color);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: "Lora", serif;
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h4 {
+    font-family: "Lora", serif;
+    color: var(--subtitles-color);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hilights {
+    font-family: "Open Sans", sans-serif;
+    color: var(--highlights-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+

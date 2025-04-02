@@ -1,12 +1,22 @@
-# React + Vite
+Website for a Veterinary Clinic "Vet-palvelu"
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description
+Vet-palvelu is a one-page website for a veterinary clinic, designed and developed from scratch.
+The main goal of the site is to increase user trust, introduce clinic services, and encourage appointment bookings via the contact form.
 
-Currently, two official plugins are available:
+Features
+    ✔ Fully responsive design for all devices (mobile to desktop)
+    ✔ Clean and intuitive UI/UX, designed from scratch
+    ✔ Appointment booking form
+    ✔ Detailed information about services and clinic benefits
+    ✔ Modern technology stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tech Stack
+    Frontend: HTML, CSS, JavaScript, React, Vite
+    Styling: CSS Modules (planned), fully responsive layout
+    Design: created entirely from scratch
 
-## Expanding the ESLint configuration
+🔗 View the website (link will be added after deployment)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Project Status
+Currently in development. Future updates and new features may be added.

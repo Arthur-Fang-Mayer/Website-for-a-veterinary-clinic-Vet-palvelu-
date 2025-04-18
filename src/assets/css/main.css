@@ -41,17 +41,8 @@
     font-size: 18px;
 }
 
-nav {
-    font-family: "Open Sans", sans-serif;
-    color: var(--text-color);
-    font-size: 16px;
-    font-weight: 400;
-}
-
 h1 {
     font-family: "Lora", serif;
-    color: var(--light-text-color);
-    font-size: 45px;
     font-weight: 400;
 }
 
@@ -65,14 +56,12 @@ h1 {
 h2 {
     font-family: "Lora", serif;
     color: var(--decorations-color);
-    font-size: 20px;
     font-weight: 400;
 }
 
 h3 {
     font-family: "Lora", serif;
     color: var(--text-color);
-    font-size: 24px;
     font-weight: 600;
 }
 
@@ -87,7 +76,6 @@ h4 {
 p {
     font-family: "Open Sans", sans-serif;
     color: var(--text-color);
-    font-size: 18px;
     font-weight: 400;
     margin-bottom: 20px;
 }
@@ -99,4 +87,69 @@ p {
     font-weight: 600;
 }
 
+.content {
+    width: 1320px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+}
 
+
+@media (max-width: 1440px) {
+    .content {
+        width: 880px;
+        margin: 0 auto;
+    }
+
+   
+}
+
+@media (max-width: 1024px) {
+    .content {
+        width: 700px;
+        margin: 0 auto;
+    }
+    .hilights {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .hilights {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .contentMobile {
+        display: block;
+    }
+}
+
+
+/* 
+
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 540px) {
+
+} 
+
+*/

@@ -30,7 +30,7 @@ header {
     color: var(--text-color);
     font-size: 16px;
     font-weight: 400;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.2s ease-in-out;
 }
 
 .navMenuItem a:hover {

@@ -85,6 +85,10 @@ p {
         right: 0;
         bottom: 10px;
     }
+    .doctorImage {
+        margin-right: 0px;
+        margin-bottom: 60px;
+    }
 }
 
 @media (max-width: 540px) {

@@ -1,0 +1,41 @@
+.customButton {
+    background-color: var(--btn-color);
+    border-radius: 5px;
+    border: none;
+    width: 280px;
+    height: 50px;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 35px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.customButton:hover {
+    background-color: var(--highlights-color);
+}
+
+
+
+
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1024px) {
+    .customButton {
+        width: 220px;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 540px) {
+
+} 
+

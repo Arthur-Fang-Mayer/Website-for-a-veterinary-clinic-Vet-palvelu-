@@ -19,6 +19,7 @@
     width: 100%;
     height: 100%;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 
@@ -33,6 +34,28 @@
 }
 
 @media (max-width: 768px) {
+
+    .servicesSection .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .servicesImg {
+        order: 1;
+    }
+
+    .servicesWrapper {
+        order: 2;
+        margin-top: 55px;
+        text-align: center;
+    }
+
+    .btnServices {
+        order: 3;
+        width: 100%;
+    }
+
 
 }
 

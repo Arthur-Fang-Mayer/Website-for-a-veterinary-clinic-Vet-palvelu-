@@ -1,0 +1,47 @@
+input, textarea {
+    width: 100%;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+    background-color: var(--bg-color);
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    padding-bottom: 4px;
+}
+
+textarea {
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    height: 140px;
+}
+
+label {
+    color: rgba(0, 0, 0, 0.3);
+    padding-bottom: 4px;
+}
+
+
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1024px) {
+    input::placeholder {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 540px) {
+
+} 

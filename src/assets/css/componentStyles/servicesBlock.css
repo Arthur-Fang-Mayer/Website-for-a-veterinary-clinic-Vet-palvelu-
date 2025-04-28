@@ -57,7 +57,13 @@
 }
 
 @media (max-width: 768px) {
+    .serviceType {
+        margin-bottom: 15px;
+    }
 
+    .service {
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 540px) {

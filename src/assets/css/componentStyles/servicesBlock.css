@@ -1,0 +1,71 @@
+.servicesComponentWrapper {
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.servicesComponentWrapper:last-child {
+    margin-bottom: 0;
+}
+
+.serviceWrapper {
+    border: solid 0.5px var(--decorations-color);
+    border-radius: 5px;
+    padding: 35px 45px 25px 45px;
+    
+}
+
+
+.service {
+    margin-bottom: 10px;
+}
+
+.serviceType {
+    color: var(--subtitles-color);
+    position: absolute;
+    top: -10px;
+    left: 35px;
+    width: auto;
+    padding: 0 10px;
+    background-color: white;
+    z-index: 1;
+}
+
+
+
+@media (max-width: 1440px) {
+    .servicesComponentWrapper  .serviceWrapper .service {
+        font-size: 16px;
+    }
+
+    .serviceType {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .serviceWrapper {
+        border: none;
+        padding: 0;
+    }
+
+    .serviceType {
+        font-size: 16px;
+        position: static;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 540px) {
+    .servicesComponentWrapper  .serviceWrapper .service {
+        font-size: 14px;
+    }
+
+    .serviceType {
+        font-size: 14px;
+    }
+} 

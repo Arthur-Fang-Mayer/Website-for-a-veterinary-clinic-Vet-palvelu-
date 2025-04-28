@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+import Button from "./Button";
 import "../assets/css/componentStyles/promoSection.css";
+import decorationLines from '../assets/icons/line.png';
 
 class Promo extends Component {
   render() {
@@ -8,10 +10,16 @@ class Promo extends Component {
         <section className="promoSection">
           <div className="content">
             <div className="wrapper">
-              <h2>Vet-palvelu OY</h2>
+              <div className="titleBlock">
+              <h2>Vet-palvelu OY</h2> 
+              <img className="decorImg" src={decorationLines} alt="decoration line" />
+              </div>
+            
+              
               <h1>Ваш доверенный ветеринар в Финляндии</h1>
-              Квалифицированная помощь, точная диагностика и бережное лечение
-              ваших любимцев
+              <p className="promoText">Квалифицированная помощь, точная диагностика и бережное лечение
+              ваших любимцев</p>
+              <Button btnText="Запись на приём" />
             </div>
           </div>
         </section>

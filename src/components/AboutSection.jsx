@@ -8,7 +8,7 @@ class About extends Component {
     return (
       <>
         <section className="aboutSection">
-          <div className="content contentMobile">
+          <div className="content">
               <div className="doctorImage">
                 <img src={vetImg} alt="Veterinary photo" />
               </div>
@@ -19,9 +19,10 @@ class About extends Component {
                 <p>Особенно меня интересуют кожные заболевания и ультразвуковая диагностика — это помогает выявлять проблемы на ранних стадиях и предотвращать серьёзные заболевания.</p>
                 <p>Я говорю на финском, русском и английском, а также понимаю латышский, поэтому мы легко найдём общий язык!</p>
                 <p className="semiBold">Буду рада помочь вашему любимцу!</p>
+                <img src={pawImg} alt="paw (decoration) image" id="pawImg"/>
               </div>
             </div>
-            <img src={pawImg} alt="paw (decoration) image" id="pawImg"/>
+            
         </section>
       </>
     );

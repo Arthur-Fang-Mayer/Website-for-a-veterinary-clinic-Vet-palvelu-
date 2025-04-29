@@ -5,7 +5,7 @@ class Button extends Component {
     render() {
         return (
             <>
-                <button className='customButton'>
+                <button className='customButton' onClick={this.props.callback}>
                     {this.props.btnText}
                 </button>
             </>

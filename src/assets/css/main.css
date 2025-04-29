@@ -70,6 +70,7 @@ h4 {
     color: var(--subtitles-color);
     font-size: 20px;
     font-weight: 400;
+    margin: 0;
     margin-bottom: 20px;
 }
 
@@ -77,7 +78,6 @@ p {
     font-family: "Open Sans", sans-serif;
     color: var(--text-color);
     font-weight: 400;
-    margin-bottom: 20px;
 }
 
 .hilights {
@@ -94,6 +94,7 @@ p {
     grid-template-columns: repeat(12, 1fr);
     column-gap: 20px;
 }
+
 
 
 @media (max-width: 1440px) {
@@ -117,6 +118,7 @@ p {
 
 @media (max-width: 768px) {
     .content {
+        display: block;
         width: 90%;
         margin: 0 auto;
     }
@@ -127,9 +129,7 @@ p {
 
 
 @media (max-width: 540px) {
-    .contentMobile {
-        display: block;
-    }
+
 }
 
 

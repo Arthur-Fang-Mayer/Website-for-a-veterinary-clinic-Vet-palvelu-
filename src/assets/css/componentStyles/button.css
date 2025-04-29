@@ -32,10 +32,14 @@
 }
 
 @media (max-width: 768px) {
-
+    .customButton {
+        width: 380px;
+    }
 }
 
 @media (max-width: 540px) {
-
+    .customButton {
+        width: 320px;
+    }
 } 
 

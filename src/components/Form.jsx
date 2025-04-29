@@ -1,15 +1,18 @@
 import React, { Component } from "react";
 import "../assets/css/componentStyles/form.css";
+import { LangContext } from "../context/langProvider";
 
 class Form extends Component {
+  static contextType = LangContext;
   render() {
+    const { translations } = this.context;
     return (
       <>
-        <input type="text" placeholder="Введите имя" />
-        <input type="tel" name="phone" placeholder="Введите номер телефона" />
-        <input type="email" name="email" placeholder="Введите эл почту" />
+        <input type="text" placeholder={translations.formSection.namePlaceholderText} />
+        <input type="tel" name="phone" placeholder={translations.formSection.phonePlaceholderText} />
+        <input type="email" name="email" placeholder={translations.formSection.mailPlaceholderText} />
 
-        <label htmlFor="comment">Кратко опишите проблему или желаемую услугу:</label>
+        <label htmlFor="comment">{translations.formSection.labelText}</label>
         <textarea name="comment" id="comment"></textarea>
       </>
     );

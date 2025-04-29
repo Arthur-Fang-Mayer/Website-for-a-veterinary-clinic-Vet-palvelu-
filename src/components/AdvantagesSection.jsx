@@ -3,20 +3,23 @@ import AdvantagesBlock from './AdvantagesBlock';
 import Title from './Title';
 import PawsPng from "../assets/img/paws.png"
 import "../assets/css/componentStyles/advantagesSection.css";
+import { LangContext } from "../context/langProvider";
 
 class Advantages extends Component {
+    static contextType = LangContext;
     render() {
+        const { translations } = this.context;
         return (
             <>
                 <section className='advantagesSection'>
                     <div className="content">
-                        <Title subtitle="Почему мне доверяют" title="С заботой о ваших любимцах на каждом этапе" />
-                        <AdvantagesBlock advantageTitle="Здоровый питомец без стресса" advantageDescription="Мы подходим к лечению мягко и заботливо, чтобы ваш любимец чувствовал себя спокойно" />
-                        <AdvantagesBlock advantageTitle="Быстрое обслуживание, без долгого ожидания" advantageDescription="Ваш питомец получит помощь вовремя, когда это на самом деле нужно" />
-                        <AdvantagesBlock advantageTitle="Точный диагноз – эффективное лечение" advantageDescription="Современная диагностика, выявляет  проблему на ранней стадии и минуя осложнения" />
-                        <AdvantagesBlock advantageTitle="Понятные рекомендации по уходу за питомцем" advantageDescription="Вы точно будете знать, что делать дальше и как правильно ухаживать за питомцем" />
-                        <AdvantagesBlock advantageTitle="Оптимальные цены без скрытых платежей" advantageDescription="Качественная ветеринарная помощь должна быть доступной" />
-                        <AdvantagesBlock advantageTitle="Дополнительные удобства —отель для кошек" advantageDescription="Если вам нужно оставить питомца на время, у нас есть безопасное и комфортное место" />
+                        <Title subtitle={translations.advantagesSection.subtitle} title={translations.advantagesSection.title} />
+                        <AdvantagesBlock advantageTitle={translations.advantagesSection.blockSubtitleOne} advantageDescription={translations.advantagesSection.blockTextOne} />
+                        <AdvantagesBlock advantageTitle={translations.advantagesSection.blockSubtitleTwo} advantageDescription={translations.advantagesSection.blockTextTwo} />
+                        <AdvantagesBlock advantageTitle={translations.advantagesSection.blockSubtitleThree} advantageDescription={translations.advantagesSection.blockTextThree} />
+                        <AdvantagesBlock advantageTitle={translations.advantagesSection.blockSubtitleFour} advantageDescription={translations.advantagesSection.blockTextFour} />
+                        <AdvantagesBlock advantageTitle={translations.advantagesSection.blockSubtitleFive} advantageDescription={translations.advantagesSection.blockTextFive} />
+                        <AdvantagesBlock advantageTitle={translations.advantagesSection.blockSubtitleSix} advantageDescription={translations.advantagesSection.blockTextSix} />
                         <img src={PawsPng} alt="Paws Decoration Image" />
                          
                     </div>

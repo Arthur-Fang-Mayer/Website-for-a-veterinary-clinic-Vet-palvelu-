@@ -43,15 +43,16 @@
 .formBtn {
     width: 50%;
     height: 50px;
-    background-color: var(--bg-color);
-    border: solid 1px var(--text-color);
+    background-color: var(--highlights-color);
+    border: none;
     border-radius: 5px;
     margin-top: 10px;
 }
 
 .formBtn:hover {
     background-color: var(--highlights-color);
-    border: none;
+    border: solid 1px #467570;
+    background-color: rgb(112, 165, 160);
 }
 
 @media (max-width: 1440px) {

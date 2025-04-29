@@ -1,0 +1,134 @@
+.contactSection {
+    margin-bottom: 150px;
+}
+
+.textContent {
+    grid-column: 1/7;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 55px;
+}
+
+.workInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 55px;
+}
+
+.info {
+    display: flex;
+    justify-self: start;
+    align-items: center;
+}
+
+.info img {
+    margin-right: 20px;
+}
+
+.info a {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.adress {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.workingTime {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.workindDays, .dayOff {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.phone {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.mail {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.map {
+    grid-column: 7/13;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 1440px) {
+    .textContent p, b{
+        font-size: 16px;
+    }
+
+    .workInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .workingTime {
+        order: 4;
+    }
+
+    .info p {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+    .contactSection {
+        margin-bottom: 100px;
+    }
+
+    .workInfo {
+        margin: 0 auto;
+        margin-bottom: 55px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .info a, p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 540px) {
+    .info a, p {
+        font-size: 14px;
+    }
+
+    .textContent p, b {
+        font-size: 14px;
+    }
+} 

@@ -1,0 +1,30 @@
+.scrollToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  z-index: 1000;
+  display: none; /* по умолчанию скрыта */
+  transition: 0.2s ease-in-out;
+}
+
+.scrollToTop.show {
+  display: block;
+}
+
+.scrollToTop:hover {
+    width: 68px;
+    height: 68px;
+}
+
+@media (max-width: 768px) {
+    .scrollToTop.show {
+        display: none;
+    }
+}

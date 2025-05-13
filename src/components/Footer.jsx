@@ -12,16 +12,16 @@ class Footer extends Component {
                     <div className="content">
                         <ul className="navFooter">
                             <li className="navFooterItem">
-                                <a href="#">{translations.footer.aboutText}</a>
+                                <a href="#about">{translations.footer.aboutText}</a>
                             </li>
                             <li className="navFooterItem">
-                                <a href="#">{translations.footer.priceText}</a>
+                                <a href="#servicesSectionStart">{translations.footer.priceText}</a>
                             </li>
                             <li className="navFooterItem">
-                                <a href="#">{translations.footer.reviewText}</a>
+                                <a href="#reviews">{translations.footer.reviewText}</a>
                             </li>
                             <li className="navFooterItem">
-                                <a href="#">{translations.footer.contactsText}</a>
+                                <a href="#contacts">{translations.footer.contactsText}</a>
                             </li>
                         </ul>
                         <a className='creatorMark' href="#">Website designed & developed by Fang-Mayer Digital</a>

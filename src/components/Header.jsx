@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import LanguageSwitch from "./LanguageSwitch";
 import "../assets/css/componentStyles/header.css";
 import { LangContext } from "../context/langProvider";
-
+import Navbar from "./Navbar";
 class Header extends Component {
   static contextType = LangContext;
   render() {
@@ -13,21 +13,22 @@ class Header extends Component {
           <div className="content">
             <ul className="navMenu">
               <li className="navMenuItem">
-                <a href="#">{translations.header.aboutText}</a>
+                <a href="#about">{translations.header.aboutText}</a>
               </li>
               <li className="navMenuItem">
-                <a href="#">{translations.header.priceText}</a>
+                <a href="#servicesSectionStart">{translations.header.priceText}</a>
               </li>
               <li className="navMenuItem">
-                <a href="#">{translations.header.reviewText}</a>
+                <a href="#reviews">{translations.header.reviewText}</a>
               </li>
               <li className="navMenuItem">
-                <a href="#">{translations.header.contactsText}</a>
+                <a href="#contacts">{translations.header.contactsText}</a>
               </li>
             </ul>
             <LanguageSwitch />
           </div>
         </header>
+        <Navbar />
       </>
     );
   }

@@ -60,7 +60,7 @@ header {
 }
 
 @media (max-width: 768px) {
-    .navMenuItem {
+    header {
         display: none;
     }
 }

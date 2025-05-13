@@ -13,7 +13,7 @@ class Reviews extends Component {
         const { translations } = this.context;
         return (
             <>
-            <section className='reviewsSection'>
+            <section className='reviewsSection' id='reviews'>
                 <div className="content">
                     <Title subtitle={translations.reviewsSection.subtitle} title={translations.reviewsSection.title} />
                     <div className="reviewsWrapper">
@@ -68,9 +68,12 @@ class Reviews extends Component {
                         </div>
                     </div>
                     <div className="btnReviews">
-                        <Button btnText={translations.reviewsSection.btnText} />
+                        <a 
+                            href="https://www.google.com/maps/place/Vet-palvelu+Oy/@60.32335,25.061237,17z/data=!4m8!3m7!1s0x469207a4eb56362b:0x9ba6b9a6e40d9843!8m2!3d60.3233474!4d25.0638119!9m1!1b1!16s%2Fg%2F1q62dlxc9?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" 
+                            target="_blank">
+                            {translations.reviewsSection.btnText}
+                        </a>
                     </div>
-                    
                 </div>
             </section>
             </>

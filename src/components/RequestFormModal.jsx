@@ -1,15 +1,65 @@
 import React, { Component } from 'react';
+import Form from './Form';
+import "../assets/css/componentStyles/formSection.css";
+import "../assets/css/componentStyles/requestFormModal.css";
+import closeBtn from "../assets/icons/close-icon.png";
+import RequestSucsessModal from './RequestSucsessModal';
+import { LangContext } from "../context/langProvider";
 
 class RequestFormModal extends Component {
+    static contextType = LangContext;
+    componentDidMount() {
+        window.scrollTo(0, 0);
+        document.body.style.overflow = 'hidden';
+    }
+
+    componentWillUnmount() {
+        document.body.style.overflow = 'auto';
+    }
+
+    handleBackdropClick = (e) => {
+    if (e.target.classList.contains('modalWindowForm')) {
+        this.props.modalClose();
+    }};
+
+    constructor(props) {
+        super(props);
+        // начальное состояние
+        this.state = {
+          isModalOpened: false
+        };
+      }
+    
+      modalOpen = () => {
+          this.setState(() => ({
+            isModalOpened: true
+        }));
+      }
+
     render() {
+        const { translations } = this.context;
         return (
-            <>
-                this is modal
-                <button className='btnClose' onClick={this.props.modalClose}>X</button>
+            <>  
+                {this.state.isModalOpened ? <RequestSucsessModal modalClose={this.props.modalClose}/> : (
+                    <section className='modalWindowForm' onClick={this.handleBackdropClick}>
+                        <div className="modalForm">
+                            <div className="formTitle">
+                                <h3>{translations.modalWindowForm.title}</h3>
+                                {translations.modalWindowForm.subtitle}
+                            </div>
+                            <button className='btnClose' onClick={this.props.modalClose}>
+                                <img src={closeBtn} alt="close button icon" />
+                            </button>
+                            <div className="formWrapper">
+                                <Form />
+                                <button className='formBtn' onClick={this.modalOpen}>{translations.modalWindowForm.btnText}</button>
+                            </div>
+                        </div>
+                    </section>
+                )}              
             </>
         );
     }
-    
 }
 
 export default RequestFormModal;

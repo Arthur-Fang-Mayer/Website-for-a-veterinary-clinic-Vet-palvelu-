@@ -14,6 +14,10 @@ class Form extends Component {
 
         <label htmlFor="comment">{translations.formSection.labelText}</label>
         <textarea name="comment" id="comment"></textarea>
+        <div className="privacyPolicyCheck">
+          <input type="checkbox" name="checkbox" id="checkbox"/> <label htmlFor="checkbox">{translations.formSection.checkboxLabelText}<a href="#">{translations.formSection.checkboxLinkText}</a></label>
+        </div>
+        
       </>
     );
   }

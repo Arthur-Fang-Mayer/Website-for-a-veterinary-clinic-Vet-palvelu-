@@ -15,6 +15,8 @@ textarea {
     border: solid 1px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     height: 140px;
+    resize: none;
+    overflow-y: auto;
 }
 
 label {
@@ -22,7 +24,33 @@ label {
     padding-bottom: 4px;
 }
 
+.privacyPolicyCheck {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 35px;
+}
 
+.privacyPolicyCheck label {
+    font-family: "Open Sans", sans-serif;
+    color: var(--subtitles-color);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: default;
+}
+
+.privacyPolicyCheck label a:hover {
+    color: var(--btn-color);
+}
+
+#checkbox {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    
+}
 
 @media (max-width: 1440px) {
 

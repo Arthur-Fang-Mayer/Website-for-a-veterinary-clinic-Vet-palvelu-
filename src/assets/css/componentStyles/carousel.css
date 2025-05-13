@@ -1,0 +1,47 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .carousel-content-wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .nav.left {
+    left: 10px;
+  }
+  
+  .nav.right {
+    right: 10px;
+  }
+  
+  
+  

@@ -2,17 +2,40 @@ import React, { Component } from "react";
 import Title from "./Title";
 import Services from "./ServicesBlock";
 import Button from "./Button";
+import RequestPricesModal from "./RequestPricesModal";
 import "../assets/css/componentStyles/servicesSection.css";
 import servicesImage from '../assets/img/dog.jpg'
 import { LangContext } from "../context/langProvider";
 
 class ServicesSection extends Component {
   static contextType = LangContext;
+
+  constructor(props) {
+    super(props);
+    // начальное состояние
+    this.state = {
+      isModalOpened: false
+    };
+  }
+
+  modalOpen = () => {
+      this.setState(() => ({
+        isModalOpened: true
+    }));
+  }
+
+  modalClose = () => {
+    this.setState(() => ({
+      isModalOpened: false
+  }));
+}
+
+
   render() {
     const { translations } = this.context;
     return (
       <>
-        <section className="servicesSection">
+        <section className="servicesSection" id="servicesSectionStart">
             <div className="content">
                 <Title subtitle={translations.servicesSection.subtitle} title= {translations.servicesSection.title} />
                 <div className="servicesWrapper">
@@ -24,9 +47,10 @@ class ServicesSection extends Component {
                     <img src={servicesImage} alt="Dog Image" />
                 </div>
                 <div className="btnServices">
-                  <Button btnText={translations.servicesSection.btnText} />
+                  <Button btnText={translations.servicesSection.btnText} callback={this.modalOpen} />
                 </div>              
             </div>
+            {this.state.isModalOpened && <RequestPricesModal modalClose={this.modalClose} />}
         </section>
       </>
     );

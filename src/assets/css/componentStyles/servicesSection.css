@@ -1,3 +1,7 @@
+.servicesSection {
+    position: relative;
+}
+
 .btnServices {
     grid-column: 1/13;
     display: flex;
@@ -8,6 +12,7 @@
 
 .servicesWrapper {
     grid-column: 1/6;
+
 }
 
 

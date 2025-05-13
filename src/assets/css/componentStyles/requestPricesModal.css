@@ -1,0 +1,125 @@
+.modalWindowPrices {
+    background-color: rgba(47, 43, 36, 0.5);
+    width: 100%;
+    min-height: 100vh;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+.modalPrices {
+    width: 1100px;
+    
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto;
+}
+
+.modalPricesTitle {
+    text-align: center;
+    margin: 45px auto 30px auto;
+}
+
+.modalPricesTitle h3 {
+    margin-bottom: 0;
+}
+
+.allServicesWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.servicesPricesWrapper {
+    width: 490px;
+    height: 570px;
+    background-color: white;
+    border-radius: 5px;
+    border: solid 1px var(--light-text-color);
+    padding: 40px;
+}
+
+.servicesBlock {
+    margin-bottom: 40px;
+}
+
+.servicesTitle {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--highlights-color);
+    margin-bottom: 30px;
+}
+
+.servicePrice {
+    display: grid;
+    grid-template-columns: 287px 1fr;
+    column-gap: 80px;
+    margin-bottom: 15px;
+}
+
+.servicePrice span {
+    color: var(--btn-color);
+}
+
+.tooltip {
+    position: relative;
+    cursor: help;
+    display: inline-block;
+    margin-left: 4px;
+    font-weight: bold;
+  }
+  
+  .tooltipText {
+    visibility: hidden;
+    opacity: 0;
+    width: max-content;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 4px 8px;
+    position: absolute;
+    z-index: 10;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+  }
+  
+  .tooltip:hover .tooltipText {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.explanationText {
+    color: var(--btn-color);
+}
+
+
+
+.modalPricesBtn {
+    margin: 30px auto;
+    width: 280px;
+    height: 50px;
+    background-color: var(--btn-color);
+    transition: background-color 0.2s ease-in-out;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+}
+
+.modalPricesBtn:hover {
+    background-color: var(--highlights-color);
+    
+}
